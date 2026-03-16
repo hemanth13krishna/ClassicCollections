@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Classic Collections — Certified garment label manufacturers and approved Levi's dealer. Premium leather patches, woven labels, garment printing. New Delhi, India.">
+<title>Classic Collections | Premium Garment Label Manufacturers — New Delhi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#C9A85C;--gold2:#E8C97A;--gold3:#9A7A3A;--ink:#08080A;--ink2:#0E0E12;--navy:#0C1828;--navy2:#111F35;--cream:#F7F2E8;--muted:rgba(255,255,255,0.44);--border:rgba(201,168,92,0.18)}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--ink);color:#fff;overflow-x:hidden;line-height:1.6}
+img{display:block;width:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--gold3);border-radius:2px}
+::selection{background:var(--gold);color:var(--ink)}
+.tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px}
+.tag::before{content:'';display:block;width:32px;height:1px;background:var(--gold);flex-shrink:0}
+.sec-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,5vw,4.4rem);font-weight:600;line-height:.95;letter-spacing:-.02em}
+.sec-h em{font-style:italic;color:var(--gold)}
+.sec-body{font-size:15px;font-weight:300;color:var(--muted);line-height:1.9;max-width:520px}
+#nav{position:fixed;inset:0 0 auto;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;transition:all .4s;border-bottom:1px solid transparent}
+#nav.scrolled{background:rgba(8,8,10,.95);backdrop-filter:blur(24px);border-bottom-color:var(--border)}
+.nav-logo{display:flex;align-items:center;gap:14px;cursor:pointer}
+.nav-logo-box{width:40px;height:40px;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--gold)}
+.nav-logo-name{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.1}
+.nav-logo-sub{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:2.5rem}
+.nav-links a{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55);transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{background:var(--gold)!important;color:var(--ink)!important;padding:9px 22px;transition:background .2s!important}
+.nav-cta:hover{background:var(--gold2)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
+.hamburger span{display:block;width:22px;height:1.5px;background:rgba(255,255,255,.7);transition:all .3s}
+.mobile-menu{display:none;position:fixed;inset:72px 0 0;background:rgba(8,8,10,.98);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;backdrop-filter:blur(20px)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.6);transition:color .2s}
+.mobile-menu a:hover{color:var(--gold)}
+.btn-gold{background:var(--gold);color:var(--ink);padding:16px 40px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .25s;display:inline-block}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7);padding:15px 36px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:all .25s;display:inline-block}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+#hero{min-height:100vh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{height:100%;object-position:center 30%}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(8,8,10,.96) 0%,rgba(8,8,10,.82) 55%,rgba(8,8,10,.3) 100%)}
+.hero-content{position:relative;z-index:2;padding:120px 5vw 4vh}
+.hero-eyebrow{margin-bottom:2.5rem}
+.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,7.5vw,8.5rem);font-weight:600;line-height:.88;letter-spacing:-.025em;margin-bottom:2.5rem}
+.hero-h1 em{display:block;font-style:italic;color:var(--gold)}
+.hero-desc{font-size:15px;font-weight:300;color:rgba(255,255,255,.52);line-height:1.95;max-width:500px;margin-bottom:3.5rem}
+.hero-btns{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center}
+.hero-stats-row{position:relative;z-index:2;display:flex;border-top:1px solid rgba(201,168,92,.12)}
+.hero-stat{padding:24px 40px 24px 5vw;border-right:1px solid rgba(201,168,92,.12)}
+.hero-stat:last-child{border-right:none}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-lbl{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:5px}
+.hero-scroll{position:absolute;bottom:3rem;right:5vw;z-index:2;display:flex;align-items:center;gap:10px;opacity:.5;transition:opacity .2s;cursor:pointer}
+.hero-scroll:hover{opacity:1}
+.hero-scroll span{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.scroll-line{width:1px;height:42px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollPulse 2.2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.35}50%{opacity:1}}
+.marquee-wrap{background:var(--gold);padding:14px 0;overflow:hidden}
+.marquee-inner{display:flex;width:max-content;animation:marquee 30s linear infinite}
+.marquee-inner:hover{animation-play-state:paused}
+.m-item{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(8,8,10,.8);padding:0 3rem;white-space:nowrap}
+.m-sep{color:rgba(8,8,10,.3);margin:0 .25rem}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#about{background:var(--ink);padding:9rem 5vw}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center;max-width:1400px;margin:0 auto}
+.about-text .sec-body{margin:2rem 0 3rem}
+.cert-list{display:flex;flex-direction:column;gap:10px}
+.cert-item{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--border);background:rgba(201,168,92,.03);transition:border-color .25s,background .25s}
+.cert-item:hover{border-color:rgba(201,168,92,.38);background:rgba(201,168,92,.06)}
+.cert-icon{width:38px;height:38px;border:1px solid rgba(201,168,92,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cert-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.cert-title{font-size:13px;font-weight:500;color:#fff}
+.cert-sub{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;color:rgba(255,255,255,.28);text-transform:uppercase;margin-top:3px}
+.about-visual{display:flex;flex-direction:column;gap:10px}
+.about-photo-main{position:relative;overflow:hidden;height:460px}
+.about-photo-main img{height:100%;transition:transform .6s ease}
+.about-photo-main:hover img{transform:scale(1.03)}
+.about-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,10,.55) 0%,transparent 50%);pointer-events:none}
+.about-caption{position:absolute;bottom:16px;left:18px;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.45);z-index:1}
+.about-badge{position:absolute;bottom:0;right:0;background:var(--gold);color:var(--ink);padding:14px 20px;z-index:1;text-align:right}
+.badge-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:700;line-height:1}
+.badge-lbl{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-top:2px}
+.about-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.about-row .photo-sm{overflow:hidden;height:180px}
+.about-row .photo-sm img{height:100%;transition:transform .5s ease}
+.about-row .photo-sm:hover img{transform:scale(1.05)}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05)}
+.mini-stat{background:var(--ink2);padding:18px 16px}
+.mini-stat-num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:var(--gold);line-height:1}
+.mini-stat-lbl{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-top:5px}
+#services{background:var(--navy);padding:9rem 5vw;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.svc-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;max-width:1400px;margin:0 auto 5rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05);max-width:1400px;margin:0 auto}
+.svc-card{background:var(--navy);padding:2.5rem 2.2rem;position:relative;overflow:hidden;transition:background .3s}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .45s ease}
+.svc-card:hover{background:rgba(201,168,92,.04)}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-num{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.3em;color:rgba(201,168,92,.35);margin-bottom:2rem}
+.svc-icon{width:50px;height:50px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;transition:border-color .3s,background .3s}
+.svc-card:hover .svc-icon{border-color:rgba(201,168,92,.4);background:rgba(201,168,92,.07)}
+.svc-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.svc-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:#fff;margin-bottom:.7rem;line-height:1.15}
+.svc-desc{font-size:13px;font-weight:300;color:rgba(255,255,255,.38);line-height:1.85}
+#process{background:var(--cream);padding:9rem 5vw}
+#process .tag{color:var(--gold3)}
+#process .tag::before{background:var(--gold3)}
+.proc-intro{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;max-width:1400px;margin:0 auto 5rem}
+.proc-body{font-size:15px;font-weight:300;color:rgba(0,0,0,.45);line-height:1.9;max-width:440px}
+.proc-steps{display:grid;grid-template-columns:repeat(5,1fr);max-width:1400px;margin:0 auto;position:relative}
+.proc-steps::before{content:'';position:absolute;top:32px;left:calc(10% + 12px);right:calc(10% + 12px);height:1px;background:linear-gradient(to right,transparent,rgba(139,110,58,.4),transparent)}
+.proc-step{text-align:center;padding:0 1rem}
+.proc-circle{width:64px;height:64px;border:1.5px solid var(--gold3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.6rem;background:var(--cream);position:relative;z-index:1;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--gold3);transition:all .3s}
+.proc-step:hover .proc-circle{background:var(--gold3);color:var(--cream)}
+.proc-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.proc-desc{font-size:11.5px;font-weight:300;color:rgba(0,0,0,.42);line-height:1.8}
+#gallery{background:var(--ink);padding:7rem 0}
+.gallery-head{display:flex;align-items:flex-end;justify-content:space-between;padding:0 5vw;max-width:1400px;margin:0 auto 3.5rem;flex-wrap:wrap;gap:1.5rem}
+.gallery-sub{font-size:14px;font-weight:300;color:var(--muted);max-width:300px;line-height:1.7}
+.gal-top{display:grid;grid-template-columns:3fr 2fr;gap:6px;padding:0 5vw;max-width:1400px;margin:0 auto 6px}
+.gal-main{overflow:hidden;height:520px;position:relative}
+.gal-main img{height:100%;transition:transform .7s ease}
+.gal-main:hover img{transform:scale(1.04)}
+.gal-stack{display:flex;flex-direction:column;gap:6px}
+.gal-stack .g-cell{overflow:hidden;flex:1;position:relative;min-height:0}
+.gal-stack .g-cell img{height:100%;width:100%;transition:transform .6s ease}
+.gal-stack .g-cell:hover img{transform:scale(1.05)}
+.gal-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 5vw;max-width:1400px;margin:0 auto}
+.gal-bottom .g-cell{overflow:hidden;height:280px;position:relative}
+.gal-bottom .g-cell img{height:100%;transition:transform .6s ease}
+.gal-bottom .g-cell:hover img{transform:scale(1.05)}
+.g-cap{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,10,.75) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:1.2rem}
+.g-cell:hover .g-cap,.gal-main:hover .g-cap{opacity:1}
+.g-cap span{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+#partners{background:var(--navy2);padding:9rem 5vw;border-top:1px solid var(--border)}
+.partners-wrap{display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:start;max-width:1400px;margin:0 auto}
+.partners-intro .sec-body{margin-top:1.5rem;margin-bottom:2.5rem}
+.covers-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;max-width:380px}
+.covers-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:300;color:var(--muted)}
+.cdot{width:5px;height:5px;background:var(--gold);flex-shrink:0}
+.pc-list{display:flex;flex-direction:column;gap:4px}
+.pc{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,92,.1);padding:2rem;transition:border-color .3s,background .3s}
+.pc:hover{border-color:rgba(201,168,92,.3);background:rgba(201,168,92,.04)}
+.pc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.06)}
+.pc-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.05em}
+.pc-badge{display:flex;align-items:center;gap:7px;border:1px solid rgba(74,222,128,.2);background:rgba(74,222,128,.08);padding:4px 12px}
+.pc-bdot{width:6px;height:6px;border-radius:50%;background:#4ade80;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.pc-btxt{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;color:#4ade80;text-transform:uppercase}
+.pc-type{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:.4rem}
+.pc-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.5rem}
+.pc-desc{font-size:12.5px;font-weight:300;color:rgba(255,255,255,.32);line-height:1.75}
+.pc-cta{margin-top:6px;padding:2rem;border:1px dashed rgba(201,168,92,.2);display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;background:rgba(201,168,92,.02)}
+.pc-cta h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:#fff}
+.pc-cta p{font-size:12.5px;font-weight:300;color:rgba(255,255,255,.35);line-height:1.7;max-width:280px}
+.numbers-band{background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.numbers-inner{display:grid;grid-template-columns:repeat(4,1fr);max-width:1400px;margin:0 auto}
+.num-item{padding:4rem 3rem;border-right:1px solid var(--border);transition:background .3s}
+.num-item:last-child{border-right:none}
+.num-item:hover{background:rgba(201,168,92,.04)}
+.num-val{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:.4rem}
+.num-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+.num-desc{font-size:12.5px;font-weight:300;color:rgba(255,255,255,.25);line-height:1.7;margin-top:.6rem}
+#testimonials{background:var(--ink2);padding:9rem 5vw}
+.testi-head{text-align:center;max-width:600px;margin:0 auto 5rem}
+.testi-head .tag{justify-content:center}
+.testi-head .tag::before{display:none}
+.testi-head .sec-h{margin-top:1.2rem}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1400px;margin:0 auto}
+.testi-card{background:var(--navy);border:1px solid rgba(255,255,255,.06);padding:2.5rem;transition:border-color .3s,transform .3s}
+.testi-card:hover{border-color:rgba(201,168,92,.2);transform:translateY(-4px)}
+.stars{display:flex;gap:4px;margin-bottom:1.5rem}
+.star{width:13px;height:13px;background:var(--gold);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.testi-q{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;line-height:1.8;color:rgba(255,255,255,.68);margin-bottom:2rem}
+.testi-auth{display:flex;align-items:center;gap:13px;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.testi-av{width:42px;height:42px;border-radius:50%;background:rgba(201,168,92,.12);border:1px solid rgba(201,168,92,.2);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;color:var(--gold);flex-shrink:0}
+.testi-name{font-size:13px;font-weight:500;color:#fff}
+.testi-role{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;color:rgba(255,255,255,.28);margin-top:3px;text-transform:uppercase}
+#cta{background:var(--gold);padding:6rem 5vw;display:flex;align-items:center;justify-content:space-between;gap:3rem;flex-wrap:wrap}
+#cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.6rem);font-weight:700;color:var(--ink);line-height:1.05}
+#cta p{font-size:15px;font-weight:300;color:rgba(8,8,10,.55);margin-top:.6rem}
+.cta-btns{display:flex;gap:1rem;flex-wrap:wrap;flex-shrink:0}
+.btn-ink{background:var(--ink);color:#fff;padding:16px 38px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;transition:background .25s;cursor:pointer;display:inline-block}
+.btn-ink:hover{background:var(--navy)}
+.btn-ink-ghost{border:1px solid rgba(8,8,10,.25);color:rgba(8,8,10,.6);padding:15px 34px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;transition:all .25s;display:inline-block}
+.btn-ink-ghost:hover{border-color:var(--ink);color:var(--ink)}
+#contact{background:var(--ink);padding:9rem 5vw}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:8rem;max-width:1400px;margin:0 auto;align-items:start}
+.contact-info .sec-body{margin:1.5rem 0 3rem}
+.c-row{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.c-row svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:3px}
+.c-lbl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:4px}
+.c-val{font-size:14px;font-weight:300;color:rgba(255,255,255,.65);line-height:1.5}
+.contact-form h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:#fff;margin-bottom:2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.fg{display:flex;flex-direction:column;margin-bottom:1rem}
+.fl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:8px}
+.fi,.fs,.ft{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);color:#fff;padding:13px 16px;font-family:'Jost',sans-serif;font-size:14px;font-weight:300;outline:none;transition:border-color .2s;width:100%;-webkit-appearance:none}
+.fi:focus,.fs:focus,.ft:focus{border-color:rgba(201,168,92,.5);background:rgba(201,168,92,.03)}
+.fi::placeholder,.ft::placeholder{color:rgba(255,255,255,.2)}
+.ft{resize:vertical;min-height:130px}
+.fs option{background:#0E0E12}
+.fsub{width:100%;background:var(--gold);color:var(--ink);border:none;padding:17px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .25s;margin-top:.5rem}
+.fsub:hover{background:var(--gold2)}
+.fsub:disabled{opacity:.6;cursor:not-allowed}
+.form-ok{display:none;text-align:center;padding:3rem;border:1px solid rgba(74,222,128,.2);background:rgba(74,222,128,.05)}
+.form-ok svg{width:44px;height:44px;stroke:#4ade80;fill:none;stroke-width:1.5;margin:0 auto 1rem}
+.form-ok h4{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fff;margin-bottom:.5rem}
+.form-ok p{font-size:13px;color:rgba(255,255,255,.4)}
+footer{background:#040406;border-top:1px solid var(--border);padding:5rem 5vw 2.5rem}
+.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:5rem;max-width:1400px;margin:0 auto 4rem}
+.ft-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,.28);line-height:1.9;margin-top:1.5rem;max-width:310px}
+.ft-head{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.ft-col li{font-size:13px;font-weight:300;color:rgba(255,255,255,.28);cursor:pointer;transition:color .2s}
+.ft-col li:hover{color:rgba(255,255,255,.65)}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,.04);max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:1rem}
+.ft-copy{font-size:11px;font-weight:300;color:rgba(255,255,255,.18);letter-spacing:.06em}
+.ft-certs{display:flex;gap:1.5rem;flex-wrap:wrap}
+.ft-cert{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(201,168,92,.4);text-transform:uppercase}
+#toast{position:fixed;bottom:2rem;right:2rem;z-index:9999;display:none;max-width:360px}
+.toast-inner{background:#111;border-left:3px solid var(--gold);padding:14px 20px;font-size:13px;font-weight:300;color:rgba(255,255,255,.8);box-shadow:0 8px 40px rgba(0,0,0,.5);animation:toastIn .3s ease}
+@keyframes toastIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s ease,transform .75s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.22s}.d3{transition-delay:.34s}.d4{transition-delay:.46s}.d5{transition-delay:.58s}
+@media(max-width:1100px){
+  .about-grid,.partners-wrap,.contact-grid{grid-template-columns:1fr;gap:4rem}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .proc-steps{grid-template-columns:1fr 1fr;gap:3rem}
+  .proc-steps::before{display:none}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .numbers-inner{grid-template-columns:1fr 1fr}
+  .num-item:nth-child(2){border-right:none}
+  .num-item:nth-child(3){border-top:1px solid var(--border)}
+  .ft-top{grid-template-columns:1fr 1fr;gap:3rem}
+  .svc-header,.proc-intro{grid-template-columns:1fr}
+  .gal-top{grid-template-columns:1fr 1fr}
+  .gal-main{height:380px}
+  .gal-stack{height:380px}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero-h1{font-size:clamp(3.2rem,9vw,5.5rem)}
+  .hero-stats-row{flex-wrap:wrap}
+  .hero-stat{padding:18px 5vw}
+  .hero-scroll{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .gal-top{grid-template-columns:1fr;padding:0 4vw}
+  .gal-main{height:300px}
+  .gal-stack{flex-direction:row;height:200px}
+  .gal-stack .g-cell{flex:1}
+  .gal-bottom{grid-template-columns:1fr;padding:0 4vw}
+  .gal-bottom .g-cell{height:240px}
+  .gallery-head{padding:0 4vw}
+  .proc-steps{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  #cta{flex-direction:column;text-align:center}
+  .cta-btns{justify-content:center}
+  .ft-top{grid-template-columns:1fr}
+  .ft-bottom{flex-direction:column;text-align:center}
+  .ft-certs{justify-content:center}
+  .numbers-inner{grid-template-columns:1fr 1fr}
+  .num-item{border-right:none;border-bottom:1px solid var(--border)}
+  .about-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <div class="nav-logo-box">CC</div>
+    <div>
+      <div class="nav-logo-name">Classic Collections</div>
+      <div class="nav-logo-sub">New Delhi · India</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#partners">Partners</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="nav-cta">Get In Touch</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#partners" onclick="closeMenu()">Partners</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#contact" onclick="closeMenu()" style="background:var(--gold);color:var(--ink);padding:12px 32px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase">Get In Touch</a>
+</div>
+
+<section id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1800&q=85&fit=crop&crop=center" alt="Garment manufacturing facility">
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="tag reveal">Approved Manufacturer · Levi's Certified · New Delhi</div>
+    </div>
+    <h1 class="hero-h1 reveal d1">Where Labels<br><em>Define Brands.</em></h1>
+    <p class="hero-desc reveal d2">Classic Collections is a certified manufacturer and approved dealer for Levi's and the world's leading apparel brands — producing garment labels, premium leather patches, and printed materials that set the standard for quality from New Delhi, India.</p>
+    <div class="hero-btns reveal d3">
+      <a href="#services" class="btn-gold">Explore Services</a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-stats-row reveal d4">
+    <div class="hero-stat"><div class="hero-stat-num">25+</div><div class="hero-stat-lbl">Years Manufacturing</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">12M+</div><div class="hero-stat-lbl">Labels Produced</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">99.4%</div><div class="hero-stat-lbl">QC Pass Rate</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">40+</div><div class="hero-stat-lbl">Brand Partnerships</div></div>
+  </div>
+  <div class="hero-scroll" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span><div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-inner">
+    <span class="m-item">Garment Labels <span class="m-sep">◆</span></span><span class="m-item">Leather Patches <span class="m-sep">◆</span></span><span class="m-item">Levi's Approved Manufacturer <span class="m-sep">◆</span></span><span class="m-item">Woven Tags <span class="m-sep">◆</span></span><span class="m-item">Garment Printing <span class="m-sep">◆</span></span><span class="m-item">Quality Tested <span class="m-sep">◆</span></span><span class="m-item">Hang Tags <span class="m-sep">◆</span></span><span class="m-item">Custom Design <span class="m-sep">◆</span></span><span class="m-item">Care Labels <span class="m-sep">◆</span></span><span class="m-item">New Delhi · India <span class="m-sep">◆</span></span><span class="m-item">Garment Labels <span class="m-sep">◆</span></span><span class="m-item">Leather Patches <span class="m-sep">◆</span></span><span class="m-item">Levi's Approved Manufacturer <span class="m-sep">◆</span></span><span class="m-item">Woven Tags <span class="m-sep">◆</span></span><span class="m-item">Garment Printing <span class="m-sep">◆</span></span><span class="m-item">Quality Tested <span class="m-sep">◆</span></span><span class="m-item">Hang Tags <span class="m-sep">◆</span></span><span class="m-item">Custom Design <span class="m-sep">◆</span></span><span class="m-item">Care Labels <span class="m-sep">◆</span></span><span class="m-item">New Delhi · India <span class="m-sep">◆</span></span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="tag reveal">Who We Are</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem">A Legacy Built<br>in <em>Every Detail</em></h2>
+      <p class="sec-body reveal d2">Classic Collections has operated at the highest tier of garment label manufacturing for over two decades from our base in New Delhi, India. We are a certified approved manufacturer and dealer for Levi Strauss &amp; Co. — a distinction earned through uncompromising quality, compliance, and zero-defect delivery.</p>
+      <p class="sec-body reveal d3" style="margin-top:1rem">Behind every iconic brand label is a manufacturer who understands what precision means. We are that manufacturer.</p>
+      <div class="cert-list reveal d3" style="margin-top:2.5rem">
+        <div class="cert-item"><div class="cert-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></div><div><div class="cert-title">Levi's® Approved Manufacturer &amp; Dealer</div><div class="cert-sub">Active certification · Continuous since 2003</div></div></div>
+        <div class="cert-item"><div class="cert-icon"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="cert-title">ISO Quality Compliance</div><div class="cert-sub">Annual audit · Full regulatory adherence</div></div></div>
+        <div class="cert-item"><div class="cert-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><div><div class="cert-title">Ethical Sourcing Certified</div><div class="cert-sub">Responsible materials · Audited supply chain</div></div></div>
+      </div>
+    </div>
+    <div class="about-visual reveal d2">
+      <div class="about-photo-main">
+        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=900&q=85&fit=crop&crop=center" alt="Classic Collections garment production floor New Delhi">
+        <div class="about-overlay"></div>
+        <div class="about-caption">Production Floor — New Delhi, India</div>
+        <div class="about-badge"><div class="badge-num">99.4%</div><div class="badge-lbl">QC Pass Rate</div></div>
+      </div>
+      <div class="about-row">
+        <div class="photo-sm"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80&fit=crop&crop=center" alt="Label quality testing"></div>
+        <div class="photo-sm"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop&crop=center" alt="Woven label manufacturing"></div>
+      </div>
+      <div class="mini-stats">
+        <div class="mini-stat"><div class="mini-stat-num">30+</div><div class="mini-stat-lbl">Label Types</div></div>
+        <div class="mini-stat"><div class="mini-stat-num">7–14</div><div class="mini-stat-lbl">Day Lead Time</div></div>
+        <div class="mini-stat"><div class="mini-stat-num">500+</div><div class="mini-stat-lbl">Min. Order</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="svc-header">
+    <div>
+      <div class="tag reveal">What We Do</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem">Full-Spectrum<br><em>Garment Solutions</em></h2>
+    </div>
+    <p class="sec-body reveal d2" style="align-self:flex-end">Every stage of label manufacturing handled in-house at our New Delhi facility. Faster turnaround, tighter quality control.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card reveal"><div class="svc-num">01</div><div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div><div class="svc-name">Garment Label Design &amp; Production</div><div class="svc-desc">Custom woven, printed, and embroidered labels to exact brand specs. Damask, satin, and taffeta weaves with 30+ thread colour options.</div></div>
+    <div class="svc-card reveal d1"><div class="svc-num">02</div><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="svc-name">Premium Leather Patches</div><div class="svc-desc">Full-grain and top-grain genuine leather patches with debossing, embossing, laser engraving, and foil stamping. Standard and custom sizing.</div></div>
+    <div class="svc-card reveal d2"><div class="svc-num">03</div><div class="svc-icon"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div class="svc-name">Quality Testing &amp; Compliance</div><div class="svc-desc">Full in-house testing: colorfastness, tensile strength, adhesion, and regulatory compliance. Every international brand standard met before shipping.</div></div>
+    <div class="svc-card reveal"><div class="svc-num">04</div><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div><div class="svc-name">Garment Printing</div><div class="svc-desc">Direct-to-garment, screen printing, and heat transfer services. Plastisol and water-based inks, up to 12 spot colours with specialty finishes.</div></div>
+    <div class="svc-card reveal d1"><div class="svc-num">05</div><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div><div class="svc-name">Hang Tags &amp; Packaging</div><div class="svc-desc">Premium hang tags and retail packaging on 400gsm+ board. Foil stamping, spot UV, custom die-cut shapes, and full barcode integration.</div></div>
+    <div class="svc-card reveal d2"><div class="svc-num">06</div><div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="svc-name">Brand Partnership Programs</div><div class="svc-desc">Dedicated account management for approved brand partners. Streamlined ordering, brand asset management, and priority production scheduling.</div></div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="proc-intro">
+    <div>
+      <div class="tag reveal">How It Works</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem;color:var(--ink)">From Brief to<br><em style="color:var(--gold3)">Delivery</em></h2>
+    </div>
+    <p class="proc-body reveal d2">Our proven five-stage process eliminates errors and ensures every order arrives on time, on spec, and to brand standard — every time.</p>
+  </div>
+  <div class="proc-steps">
+    <div class="proc-step reveal"><div class="proc-circle">01</div><div class="proc-title">Brief &amp; Spec</div><div class="proc-desc">Submit requirements, artwork, and brand guidelines directly with your account manager.</div></div>
+    <div class="proc-step reveal d1"><div class="proc-circle">02</div><div class="proc-title">Design &amp; Proof</div><div class="proc-desc">Our design team creates digital and physical proofs for brand review before production.</div></div>
+    <div class="proc-step reveal d2"><div class="proc-circle">03</div><div class="proc-title">Material Testing</div><div class="proc-desc">All substrates tested against brand and regulatory specifications in our in-house QC lab.</div></div>
+    <div class="proc-step reveal d3"><div class="proc-circle">04</div><div class="proc-title">Production</div><div class="proc-desc">Manufacturing begins on approval with live status updates throughout the process.</div></div>
+    <div class="proc-step reveal d4"><div class="proc-circle">05</div><div class="proc-title">QC &amp; Delivery</div><div class="proc-desc">Final inspection, packing to brand spec, and tracked delivery with full documentation.</div></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-head">
+    <div>
+      <div class="tag reveal">Our Work</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem">Crafted with<br><em>Precision</em></h2>
+    </div>
+    <p class="gallery-sub reveal d2">Label types, materials, and finished products from our New Delhi production floor.</p>
+  </div>
+  <div class="gal-top">
+    <div class="gal-main reveal">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1000&q=85&fit=crop&crop=center" alt="Garment manufacturing woven label production">
+      <div class="g-cap"><span>Woven Label Production — Main Brand Series</span></div>
+    </div>
+    <div class="gal-stack reveal d1">
+      <div class="g-cell">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=700&q=85&fit=crop&crop=center" alt="Premium leather patches denim">
+        <div class="g-cap"><span>Leather Patches — Denim Grade</span></div>
+      </div>
+      <div class="g-cell">
+        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=700&q=85&fit=crop&crop=center" alt="Garment quality control inspection">
+        <div class="g-cap"><span>Quality Control — Inspection Floor</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="gal-bottom">
+    <div class="g-cell reveal">
+      <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=700&q=85&fit=crop&crop=center" alt="Premium hang tags retail packaging">
+      <div class="g-cap"><span>Hang Tags — Premium Retail</span></div>
+    </div>
+    <div class="g-cell reveal d1">
+      <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=700&q=85&fit=crop&crop=center" alt="Screen printing direct to garment">
+      <div class="g-cap"><span>Screen Printing — Garment Direct</span></div>
+    </div>
+    <div class="g-cell reveal d2">
+      <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=700&q=85&fit=crop&crop=center" alt="Premium leather fabric materials">
+      <div class="g-cap"><span>Materials — Premium Leather Stock</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="partners-wrap">
+    <div class="partners-intro">
+      <div class="tag reveal">Brand Partnerships</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem">Approved By<br>the <em>World's Best</em></h2>
+      <p class="sec-body reveal d2">Classic Collections holds verified approved manufacturer and dealer status with leading global apparel brands. Each certification is backed by rigorous auditing and ongoing quality assurance from our New Delhi headquarters.</p>
+      <div class="covers-grid reveal d3" style="margin-top:2.5rem">
+        <div class="covers-item"><div class="cdot"></div>Woven Labels</div>
+        <div class="covers-item"><div class="cdot"></div>Leather Patches</div>
+        <div class="covers-item"><div class="cdot"></div>Hang Tags</div>
+        <div class="covers-item"><div class="cdot"></div>Care Labels</div>
+        <div class="covers-item"><div class="cdot"></div>Garment Printing</div>
+        <div class="covers-item"><div class="cdot"></div>PU Leather</div>
+      </div>
+    </div>
+    <div class="reveal d2">
+      <div class="pc-list">
+        <div class="pc">
+          <div class="pc-top"><div class="pc-logo">Levi's®</div><div class="pc-badge"><div class="pc-bdot"></div><div class="pc-btxt">Active</div></div></div>
+          <div class="pc-type">Approved Manufacturer &amp; Authorized Dealer</div>
+          <div class="pc-name">Levi Strauss &amp; Co.</div>
+          <div class="pc-desc">Full approval covering garment labels, leather patches, care labels, and hang tags. Continuous compliance since 2003 — one of a select group of certified manufacturers globally.</div>
+        </div>
+        <div class="pc">
+          <div class="pc-top"><div class="pc-logo" style="font-family:'DM Mono',monospace;font-size:.9rem;letter-spacing:.12em;color:rgba(255,255,255,.3)">GLOBAL BRANDS</div><div class="pc-badge"><div class="pc-bdot"></div><div class="pc-btxt">Active</div></div></div>
+          <div class="pc-type">Approved Supplier · Multiple Brands</div>
+          <div class="pc-name">Additional Brand Partners</div>
+          <div class="pc-desc">Classic Collections holds active approved supplier status with additional international apparel brands. Full details available on request to qualified buyers.</div>
+        </div>
+      </div>
+      <div class="pc-cta">
+        <h4>Become a Client</h4>
+        <p>Interested in working with Classic Collections? We review new client partnerships on an ongoing basis.</p>
+        <a href="#contact" class="btn-ghost" style="font-size:10px;padding:11px 26px">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="numbers-band">
+  <div class="numbers-inner">
+    <div class="num-item reveal"><div class="num-val" data-count="25" data-suffix="+">25+</div><div class="num-lbl">Years in Manufacturing</div><div class="num-desc">Established in New Delhi, supplying global apparel brands for over two decades.</div></div>
+    <div class="num-item reveal d1"><div class="num-val" data-count="12" data-suffix="M+">12M+</div><div class="num-lbl">Labels Produced</div><div class="num-desc">Across woven, printed, leather, and synthetic formats for global brands.</div></div>
+    <div class="num-item reveal d2"><div class="num-val" data-decimal="99.4" data-suffix="%">99.4%</div><div class="num-lbl">QC Pass Rate</div><div class="num-desc">Industry-leading quality control with in-house testing on every batch.</div></div>
+    <div class="num-item reveal d3"><div class="num-val" data-count="40" data-suffix="+">40+</div><div class="num-lbl">Brand Partnerships</div><div class="num-desc">Active approved supplier relationships with leading international apparel houses.</div></div>
+  </div>
+</div>
+
+<section id="testimonials">
+  <div class="testi-head">
+    <div class="tag reveal">Client Feedback</div>
+    <h2 class="sec-h reveal d1" style="margin-top:1.2rem">Trusted by Buyers<br>Who <em>Demand More</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="testi-q">"Classic Collections understands the Levi's approval process from the inside. Their label quality and turnaround are consistently exceptional — zero QC issues across five production runs."</p><div class="testi-auth"><div class="testi-av">SM</div><div><div class="testi-name">Sarah Mitchell</div><div class="testi-role">Sourcing Director, Denim Brand</div></div></div></div>
+    <div class="testi-card reveal d1"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="testi-q">"The leather patch quality is genuinely premium. Zero rejections across three full production runs. Their team in New Delhi is responsive and deeply professional."</p><div class="testi-auth"><div class="testi-av">JR</div><div><div class="testi-name">James Rodriguez</div><div class="testi-role">Production Manager, Apparel Group</div></div></div></div>
+    <div class="testi-card reveal d2"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="testi-q">"We switched three years ago. Their compliance documentation is impeccable and delivery is always on or ahead of schedule. A genuinely reliable partner."</p><div class="testi-auth"><div class="testi-av">PS</div><div><div class="testi-name">Priya Sharma</div><div class="testi-role">Head of Supply Chain, Fashion Retailer</div></div></div></div>
+  </div>
+</section>
+
+<div id="cta">
+  <div><h2>Ready to Work<br>with the Best?</h2><p>Let's discuss your label requirements. New Delhi-based, globally certified.</p></div>
+  <div class="cta-btns"><a href="#contact" class="btn-ink">Contact Our Team</a><a href="tel:+911100000000" class="btn-ink-ghost">+91 11 0000 0000</a></div>
+</div>
+
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="tag reveal">Get In Touch</div>
+      <h2 class="sec-h reveal d1" style="margin-top:1.2rem">Let's Build<br><em>Something Great</em></h2>
+      <p class="sec-body reveal d2">Whether you're an existing client or exploring a new partnership, our team in New Delhi is ready to discuss your requirements.</p>
+      <div class="reveal d3">
+        <div class="c-row"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.21 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div><div class="c-lbl">Phone</div><div class="c-val">+91 11 0000 0000</div></div></div>
+        <div class="c-row"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><div class="c-lbl">Email</div><div class="c-val">info@classiccollections.in</div></div></div>
+        <div class="c-row"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div><div class="c-lbl">Address</div><div class="c-val">Garment Nagar, New Delhi — 110005<br>India</div></div></div>
+        <div class="c-row"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><div class="c-lbl">Business Hours</div><div class="c-val">Monday – Saturday · 9:00 AM – 6:00 PM IST</div></div></div>
+      </div>
+    </div>
+    <div class="contact-form reveal d2">
+      <h3>Send a Message</h3>
+      <form id="cForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="fg"><label class="fl">First Name</label><input class="fi" type="text" placeholder="John" required></div>
+          <div class="fg"><label class="fl">Last Name</label><input class="fi" type="text" placeholder="Smith" required></div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label class="fl">Email</label><input class="fi" type="email" placeholder="you@company.com" required></div>
+          <div class="fg"><label class="fl">Company</label><input class="fi" type="text" placeholder="Your Brand"></div>
+        </div>
+        <div class="fg"><label class="fl">Inquiry Type</label><select class="fs"><option>New Partnership Inquiry</option><option>Product Quotation Request</option><option>Levi's Label Enquiry</option><option>Sample Request</option><option>General Enquiry</option></select></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="ft" placeholder="Describe your label requirements, quantities, timeline, and any brand guidelines..." required></textarea></div>
+        <button type="submit" class="fsub" id="sbtn">Send Message →</button>
+      </form>
+      <div class="form-ok" id="formOk">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        <h4>Message Sent</h4>
+        <p>Thank you. Our team will be in touch within 1 business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="nav-logo"><div class="nav-logo-box" style="width:36px;height:36px;font-size:15px">CC</div><div><div class="nav-logo-name" style="font-size:14px">Classic Collections</div><div class="nav-logo-sub">New Delhi · India</div></div></div>
+      <p style="font-size:13px;font-weight:300;color:rgba(255,255,255,.28);line-height:1.9;margin-top:1.5rem;max-width:310px">Precision garment label manufacturing and approved dealer services for the world's leading apparel brands. Built on trust, certified by results.</p>
+    </div>
+    <div class="ft-col"><div class="ft-head">Services</div><ul><li>Woven Labels</li><li>Leather Patches</li><li>Hang Tags</li><li>Garment Printing</li><li>Care Labels</li><li>Quality Testing</li></ul></div>
+    <div class="ft-col"><div class="ft-head">Company</div><ul><li onclick="scrollToSec('about')">About Us</li><li onclick="scrollToSec('partners')">Our Partners</li><li>Quality Standards</li><li>Sustainability</li><li>Careers</li></ul></div>
+    <div class="ft-col"><div class="ft-head">Connect</div><ul><li onclick="scrollToSec('contact')">Contact Us</li><li>Production Enquiries</li><li>Partnership Requests</li><li>Compliance Docs</li><li>New Delhi HQ</li></ul></div>
+  </div>
+  <div class="ft-bottom">
+    <div class="ft-copy">© 2026 Classic Collections Pvt. Ltd., New Delhi, India. All rights reserved.</div>
+    <div class="ft-certs"><div class="ft-cert">Levi's Certified</div><div class="ft-cert">·</div><div class="ft-cert">ISO Compliant</div><div class="ft-cert">·</div><div class="ft-cert">Ethically Sourced</div></div>
+  </div>
+</footer>
+
+<div id="toast"><div class="toast-inner" id="toastMsg"></div></div>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+function scrollToSec(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu'),h=document.getElementById('hamburger');
+  const open=m.classList.toggle('open');
+  const s=h.querySelectorAll('span');
+  if(open){s[0].style.transform='rotate(45deg) translate(4.5px,4.5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(4.5px,-4.5px)';}
+  else{s.forEach(x=>{x.style.transform='';x.style.opacity='';});}
+}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburger').querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';});}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);if(!id)return;const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}});
+});
+const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+const no=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target.querySelector('.num-val');
+    if(!el||el.dataset.animated)return;
+    el.dataset.animated='1';
+    const count=parseFloat(el.dataset.count||'0');
+    const dec=parseFloat(el.dataset.decimal||'0');
+    const suffix=el.dataset.suffix||'';
+    const target=dec||count;
+    const isD=!!el.dataset.decimal;
+    const dur=2000,start=performance.now();
+    function tick(now){const p=Math.min((now-start)/dur,1);const ease=1-Math.pow(1-p,3);const val=target*ease;el.textContent=(isD?val.toFixed(1):Math.round(val))+suffix;if(p<1)requestAnimationFrame(tick);}
+    requestAnimationFrame(tick);
+    no.unobserve(e.target);
+  });
+},{threshold:.5});
+document.querySelectorAll('.num-item').forEach(el=>no.observe(el));
+function handleSubmit(e){
+  e.preventDefault();
+  const btn=document.getElementById('sbtn');
+  btn.textContent='Sending…';btn.disabled=true;
+  setTimeout(()=>{document.getElementById('cForm').style.display='none';document.getElementById('formOk').style.display='block';showToast('Message sent! Our team will be in touch within 1 business day.');},900);
+}
+function showToast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=msg;t.style.display='block';clearTimeout(window._tt);window._tt=setTimeout(()=>t.style.display='none',4500);}
+</script>
+</body>
+</html>
